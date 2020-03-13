@@ -78,7 +78,7 @@ Coming soon...stay tuned!
 A few software prerequisites are required in order to successfully build and execute the stream detector plugin. 
 They are the following :
 
-1. The minimum required version of cmake is 3.13
+1. The minimum required version of cmake is 3.9
 1. ROOT must be installed and the appropriate environment configured.  Consider one of the two options listed below:
     - `source /path/to/root/installation/bin/thisroot.(c)sh`
     - Manually configure the `ROOTSYS, PATH,` and `LD_LIBRARY_PATH` environment variables
@@ -251,7 +251,7 @@ To obtain the `INDRA_Stream_Test` libraries one needs to first clone the
 prerequisites are required in order to successfully build and execute the `INDRA_Stream_Test` libraries. They 
 are the following :
 
-1. The minimum required version of cmake is 3.13
+1. The minimum required version of cmake is 3.9
 1. Both the ZeroMQ and CZMQ libraries must be present
     - Use your package manager to install the libraries system wide e.g. `yum install zeromq-devel` 
     and `yum install czmq-devel` 
