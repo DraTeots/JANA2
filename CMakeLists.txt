@@ -1,7 +1,13 @@
 cmake_minimum_required(VERSION 3.9)
 project(jana2 VERSION 2.0.1)
 
-set(CMAKE_CXX_STANDARD 14)
+# C++ standard to use (controlled with -DCPP_STANDARD flag)
+if(NOT DEFINED CMAKE_CXX_STANDARD)
+    SET(CMAKE_CXX_STANDARD 14)
+    message(STATUS "jana: CMAKE_CXX_STANDARD set default to ${CMAKE_CXX_STANDARD}")
+endif()
+message(STATUS "jana: CMAKE_CXX_STANDARD: ${CMAKE_CXX_STANDARD}")
+
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)   # Enable -fPIC for all targets
 
 # Expose custom cmake modules
